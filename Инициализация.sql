@@ -36,7 +36,7 @@ CREATE TABLE Readers (
     readerID SERIAL PRIMARY KEY,
     first_name VARCHAR(100) NOT NULL,
     last_name VARCHAR(100) NOT NULL,
-    address VARCHAR(255),
+    email_address VARCHAR(255),
     phone_number VARCHAR(15)
 );
 
