@@ -6,7 +6,8 @@
 - триггер автоматически заполняющий столбцы due_date и is_overdue (`Триггер (due_date and is_overdue).sql`)
 - запросы к БД, задание 3 (`Запросы к БД библиотека.sql`) 
 ---
-
+![Иллюстрация к проекту](https://github.com/Sonkopeter/Library-DB/blob/main/LibraryDB.png)
+---
 ### 1. **Таблица `Authors` (Авторы)**:
    - **Поля**:
      - `author_id` (Primary Key).
