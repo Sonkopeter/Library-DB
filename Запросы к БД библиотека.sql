@@ -22,5 +22,5 @@ FROM Loans l
 	INNER JOIN Genres g ON b.genreID = g.genreID
 	INNER JOIN Readers r ON l.readerID = r.readerID
 WHERE g.genre_name = 'Детектив'
-	AND l.return_date > l.due_date
+	AND l.is_overdue = TRUE
 GROUP BY r.readerID, r.first_name, r.last_name;
