@@ -9,6 +9,7 @@
 - ER-диаграмма построена в онлайн редакторе https://www.lucidchart.com (`LibraryDB.png` прикреплено ниже) и в PowerBI (`ERD.pbix`)
 ---
 ![Иллюстрация к проекту](https://github.com/Sonkopeter/Library-DB/blob/main/LibraryDB.png)
+
 ---
 ### 1. **Таблица `Authors` (Авторы)**:
    - **Поля**:
