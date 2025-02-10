@@ -4,7 +4,9 @@
 - триггер проверяющий корректность return_date (`Триггер (check_return_date).sql`)
 - триггер подсчета количечтво взятых книг (`Триггер (loan_count).sql`)
 - триггер автоматически заполняющий столбцы due_date и is_overdue (`Триггер (due_date and is_overdue).sql`)
-- запросы к БД, задание 3 (`Запросы к БД библиотека.sql`) 
+- запросы к БД, задание 3 (`Запросы к БД библиотека.sql`)
+---
+- ER-диаграмма построена в онлайн редакторе https://www.lucidchart.com (`LibraryDB.png` прикреплено ниже) и в PowerBI (`ERD.pbix`)
 ---
 ![Иллюстрация к проекту](https://github.com/Sonkopeter/Library-DB/blob/main/LibraryDB.png)
 ---
