@@ -9,14 +9,22 @@ BEGIN
 
     -- Устанавливаем is_overdue
     IF NEW.return_date IS NOT NULL THEN
-        IF NEW.return_date > NEW.due_date THEN
-            NEW.is_overdue = TRUE;
-        ELSE
-            NEW.is_overdue = FALSE;
-        END IF;
+        -- можем сразу писать так, потому что булевая
+        NEW.is_overdue = NEW.return_date > NEW.due_date;
     ELSE
-        NEW.is_overdue = FALSE;
+        -- Если книга ещё не возвращена, проверяем текущую дату
+        NEW.is_overdue = CURRENT_DATE > NEW.due_date;
     END IF;
+
+    -- IF NEW.return_date IS NOT NULL THEN
+    --     IF NEW.return_date > NEW.due_date THEN
+    --         NEW.is_overdue = TRUE;
+    --     ELSE
+    --         NEW.is_overdue = FALSE;
+    --     END IF;
+    -- ELSE
+    --     NEW.is_overdue = FALSE;
+    -- END IF;
 
     RETURN NEW;
 END;
